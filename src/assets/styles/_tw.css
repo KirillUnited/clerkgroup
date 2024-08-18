@@ -16,7 +16,7 @@
         --secondary-text: 225 27% 63%;
     }
     body {
-        @apply text-foreground bg-background font-foreground;
+        @apply text-foreground bg-background font-foreground overflow-x-hidden;
     }
 }
 @layer components {
@@ -28,9 +28,6 @@
 
     .content {
         flex: 1 0 auto;
-    }
-    .container-sm {
-        @apply lg:max-w-screen-md xl:max-w-screen-lg 2xl:max-w-[1320px];
     }
     .post-content-grid {
         @apply gap-x-7;

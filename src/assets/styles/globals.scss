@@ -467,6 +467,7 @@ video {
 }
 
 body {
+  overflow-x: hidden;
   background-color: hsl(var(--background));
   font-family: var(--font-foreground), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   color: hsl(var(--foreground));
@@ -682,24 +683,6 @@ body {
   flex: 1 0 auto;
 }
 
-@media (min-width: 1024px) {
-  .container-sm {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container-sm {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container-sm {
-    max-width: 1320px;
-  }
-}
-
 .post-content-grid {
   -moz-column-gap: 1.75rem;
        column-gap: 1.75rem;
@@ -726,6 +709,10 @@ body {
 .my-7 {
   margin-top: 1.75rem;
   margin-bottom: 1.75rem;
+}
+
+.mt-12 {
+  margin-top: 3rem;
 }
 
 .block {
@@ -768,17 +755,12 @@ body {
   gap: 0.5rem;
 }
 
-.gap-3 {
-  gap: 0.75rem;
+.gap-4 {
+  gap: 1rem;
 }
 
-.gap-7 {
-  gap: 1.75rem;
-}
-
-.gap-x-5 {
-  -moz-column-gap: 1.25rem;
-       column-gap: 1.25rem;
+.self-start {
+  align-self: flex-start;
 }
 
 .rounded-full {
@@ -804,16 +786,21 @@ body {
   line-height: 1.25rem;
 }
 
-.font-bold {
-  font-weight: 700;
-}
-
 .text-background {
   color: hsl(var(--background));
 }
 
 .text-foreground {
   color: hsl(var(--foreground));
+}
+
+.text-secondary-foreground {
+  color: hsl(var(--secondary-foreground));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .hover\:cursor-pointer:hover {
@@ -828,22 +815,6 @@ body {
   .md\:my-12 {
     margin-top: 3rem;
     margin-bottom: 3rem;
-  }
-
-  .md\:flex {
-    display: flex;
-  }
-
-  .md\:hidden {
-    display: none;
-  }
-
-  .md\:gap-10 {
-    gap: 2.5rem;
-  }
-
-  .md\:gap-5 {
-    gap: 1.25rem;
   }
 }
 

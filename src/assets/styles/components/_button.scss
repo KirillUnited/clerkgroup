@@ -1,7 +1,7 @@
 .button {
     --color: #EF2A82;
     @apply inline-flex items-center justify-center;
-    @apply text-primary-foreground bg-primary;
+    @apply text-primary-foreground bg-primary truncate;
     @apply transition-colors;
     font-size: getrem(16px);
     min-height: calc(50/16*1em);

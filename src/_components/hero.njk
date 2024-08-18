@@ -1,25 +1,29 @@
 {% import "./button.njk" as Button %}
-<section
-    class="hero text-background"
-    style="background: url('https://gusarov-group.by/seo/wp-content/themes/Gusarov/assets/images/postBg.webp');">
-    <div class="container container-sm">
-        <div class="hero-inner">
-            <div class="flex flex-col gap-7 md:gap-10">
-                <h1 class="hero-title">Ошибка 401 Unauthorized: что это за ошибка, диагностика и как ее исправить</h1>
-                {% include "./html/profile-card.html" %}
-                <div class="flex flex-col gap-3 md:gap-5">
-                    <div class="dates flex flex-wrap gap-x-5 items-center">
-                        <span>Опубликовано:
-                            <span class="font-bold">24 июля 2023</span>
-                        </span>
-                        <span>Обновлено:
-                            <span class="font-bold">25 апреля 2024</span>
-                        </span>
-                    </div>
-                    {% include "./metadata.njk" %}
-                    {% include "./tags.njk" %}
-                    {{ Button.Button('Try for free') }}
+<section class="hero" style="background: url('../assets/images/bg-bg.png')">
+    <div class="container">
+        <div class="hero__inner">
+            <div class="hero__content">
+                <div class="flex flex-col gap-4">
+                    <h1 class="hero__title text-white">
+                        Monitor your business on real-time dashboard
+                    </h1>
+                    <p class="hero__description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est.
+                        Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam.
+                    </p>
                 </div>
+                {{ Button.Button("Try for free", className="self-start mt-12") }}
+            </div>
+            <div class="hero__image">
+                <img
+                    loading="lazy"
+                    decoding="async"
+                    width="873"
+                    height="554"
+                    src="../assets/images/bg-mobile.png"
+                    srcset="../assets/images/bg-mobile.png 240w,
+                    ../assets/images/bg.png 720w"
+                    alt="Monitor your business on real-time dashboard"/>
             </div>
         </div>
     </div>

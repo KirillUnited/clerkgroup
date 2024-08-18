@@ -2,17 +2,26 @@
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
-    &-inner {
-        padding-top: getMinMax(110px, 164px);
-        padding-bottom: getMinMax(48px, 48px);
+    &__inner {
+        @apply flex flex-wrap items-center justify-between gap-20;
+        padding: getMinMax(40px, 110px) 0;
     }
-    &-title {
-        @apply font-primary font-black;
-        font-size: getMinMax(28px, 56px);
-        line-height: calc(64px / 56px) * 1em;
-        letter-spacing: -0.0125em;
+    &__content {
+        @apply flex flex-col items-center justify-between;
+        width: getrem(550px);
+        flex-basis: getrem(550px);
     }
-    .dates {
-        font-size: getMinMax(14px, 16px);
+    &__title {
+        @apply font-bold;
+        font-size: getMinMax(28px, 52px);
+        line-height: calc(60px / 52px) * 1em;
+    }
+    &__description {
+        @apply text-secondary-foreground;
+        font-size: getMinMax(16px, 18px);
+        line-height: calc(24px / 19px) * 1em;
+    }
+    &__image {
+        flex: 1;
     }
 }
