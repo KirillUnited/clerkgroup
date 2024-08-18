@@ -1,0 +1,28 @@
+.button {
+    --color: #EF2A82;
+    @apply inline-flex items-center justify-center;
+    @apply text-primary-foreground bg-primary;
+    @apply transition-colors;
+    font-size: getrem(16px);
+    min-height: calc(50/16*1em);
+    padding-inline: calc(80/16*1em);
+    border-radius: calc(68/16*1em);
+    border: 2px solid var(--color);
+    &:hover {
+        --color: #D61069;
+        background-color: var(--color);
+    }
+    &:focus {
+        --color: #A60C51;
+    }
+    &-secondary {
+        --color: #465B95;
+        background-color: transparent;
+        &:hover {
+            --color: #465B95
+        }
+        &:focus {
+            --color: #364672
+        }
+    }
+}

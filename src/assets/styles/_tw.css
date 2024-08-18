@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --primary: 333 86% 55%;
+        --primary-foreground: 0 0% 100%;
+        --secondary: transparent;
+        --secondary-foreground: 225 27% 63%;
+        --background: 225 57% 21%;
+        --foreground: 0 0% 100%;
+        --font-foreground: "Roboto";
+        --card-background: #465B95;
+    }
+    body {
+        @apply text-foreground bg-background font-foreground;
+    }
+}
+@layer components {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        min-height: 100dvh;
+    }
+
+    .content {
+        flex: 1 0 auto;
+    }
+    .container-sm {
+        @apply lg:max-w-screen-md xl:max-w-screen-lg 2xl:max-w-[1320px];
+    }
+    .post-content-grid {
+        @apply gap-x-7;
+        grid-template-columns: 1fr 420px;
+        grid-template-rows: repeat(2, auto);
+    }
+}

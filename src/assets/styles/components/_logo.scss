@@ -1,0 +1,7 @@
+.logo {
+    &-icon {
+        max-width: 100%;
+        width: getMinMax(138px, 183px);
+        height: getMinMax(28px, 40px);
+    }
+}
