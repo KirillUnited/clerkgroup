@@ -17,6 +17,7 @@
     }
     &-secondary {
         --color: #465B95;
+        @apply text-secondary-foreground;
         background-color: transparent;
         &:hover {
             --color: #465B95

@@ -12,6 +12,8 @@
         --foreground: 0 0% 100%;
         --font-foreground: "Roboto";
         --card-background: #465B95;
+        --primary-text: 0 0% 100%;
+        --secondary-text: 225 27% 63%;
     }
     body {
         @apply text-foreground bg-background font-foreground;

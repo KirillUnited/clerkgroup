@@ -15,11 +15,13 @@ module.exports = {
       colors: {
         primary: {
           DEFAULT: 'hsl(var(--primary))',
-          foreground: 'hsl(var(--primary-foreground))'
+          foreground: 'hsl(var(--primary-foreground))',
+          text: 'hsl(var(--primary-text))'
         },
         secondary: {
           DEFAULT: 'hsl(var(--secondary))',
-          foreground: 'hsl(var(--secondary-foreground))'
+          foreground: 'hsl(var(--secondary-foreground))',
+          text: 'hsl(var(--secondary-text))'
         },
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',

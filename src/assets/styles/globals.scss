@@ -462,6 +462,8 @@ video {
   --foreground: 0 0% 100%;
   --font-foreground: "Roboto";
   --card-background: #465B95;
+  --primary-text: 0 0% 100%;
+  --secondary-text: 225 27% 63%;
 }
 
 body {
@@ -734,16 +736,12 @@ body {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .hidden {
   display: none;
-}
-
-.h-\[2px\] {
-  height: 2px;
-}
-
-.w-12 {
-  width: 3rem;
 }
 
 .transform {
@@ -826,20 +824,18 @@ body {
   display: block;
 }
 
-@media (min-width: 640px) {
-  .sm\:block {
-    display: block;
-  }
-}
-
 @media (min-width: 768px) {
   .md\:my-12 {
     margin-top: 3rem;
     margin-bottom: 3rem;
   }
 
-  .md\:block {
-    display: block;
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:hidden {
+    display: none;
   }
 
   .md\:gap-10 {
@@ -862,12 +858,12 @@ body {
     display: block;
   }
 
-  .xl\:inline-block {
-    display: inline-block;
-  }
-
   .xl\:flex {
     display: flex;
+  }
+
+  .xl\:hidden {
+    display: none;
   }
 }
 

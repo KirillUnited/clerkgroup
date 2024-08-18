@@ -3,24 +3,12 @@
 <header id="header" class="header">
     <div class="container">
         <div class="flex items-center justify-between py-4">
-            <div class="flex flex-wrap gap-x-5 items-center">
-                {% include "./html/logo.html" %}
-                <span class="hidden xl:inline-block w-12 h-[2px] bg-background"></span>
-                <div class="hidden xl:block">{{ headerMenu.headerMenu(['Products', 'Features', 'Registration', 'Pricing']) }}</div>
+            {% include "./html/logo.html" %}
+            <div class="hidden xl:block">{{ headerMenu.headerMenu(['Products', 'Features', 'Registration', 'Pricing']) }}</div>
+            <div class="hidden xl:flex items-center">
+                {{ Button.Button('Sign UP', 'button-secondary') }}
             </div>
-            <div class="flex flex-wrap gap-x-5 items-center">
-                <div class="hidden md:block">{{ Button.Button('Стать клиентом') }}</div>
-                <a
-                    href="tel:+375291115558"
-                    class="hidden xl:flex font-bold"
-                    aria-label="+375 (29) 111 - 55 - 58"
-                    title="+375 (29) 111 - 55 - 58">
-                    +375 (29) 111 - 55 - 58
-                </a>
-                <div class="hidden sm:block">
-                    {% include "./social.njk" %}
-                </div>
-                <button type="button" class="header-menu-button">
+            <button type="button" class="header-menu-button grid xl:hidden">
                     <svg
                         class="header-menu-icon"
                         width="100%"
@@ -34,7 +22,6 @@
                             fill="currentColor"/>
                     </svg>
                 </button>
-            </div>
         </div>
     </div>
 </header>
