@@ -4,8 +4,9 @@
     &-nav {
         &-list {
             @apply flex items-center flex-wrap;
-            @apply gap-x-7;
+            gap: getMinMax(16px, 36px);
             > li > a {
+                @apply text-secondary-text;
                 @apply block;
                 &:after {
                     content: "";
@@ -19,14 +20,11 @@
                     width: 100%;
                 }
             }
-            &-secondary {
-                @apply gap-x-14;
-            }
         }
     }
     &-menu-button {
         --size: #{getMinMax(25px, 35px)};
-        display: grid;
+        @apply text-secondary-foreground;
         place-items: center;
         width: var(--size);
         height: var(--size);
