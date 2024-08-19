@@ -1,0 +1,29 @@
+{% import "./header-menu.njk" as headerMenu %}
+<footer id="footer" class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <a href="/" class="logo">
+                <img src="../../assets/images/logo-2.svg" class="logo-icon" alt="ANALYTICS"/>
+            </a>
+            <div class="hidden xl:block">
+                {{ headerMenu.headerMenu([
+                        "Products",
+                        "Features",
+                        "Registration",
+                        "Pricing"
+                    ]) }}
+            </div>
+            <ul class="footer__social">
+                <li class="footer__social__item">
+                    <a href="#">{% include "../assets/images/icons/Facebook.svg" %}</a>
+                </li>
+                <li class="footer__social__item">
+                    <a href="#">{% include "../assets/images/icons/Twitter.svg" %}</a>
+                </li>
+                <li class="footer__social__item">
+                    <a href="#">{% include "../assets/images/icons/Instagram.svg" %}</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
