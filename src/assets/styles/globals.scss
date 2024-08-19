@@ -467,6 +467,11 @@ video {
   --secondary-text: 225 27% 63%;
 }
 
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
 body {
   overflow-x: hidden;
   background-color: hsl(var(--background));
@@ -696,10 +701,6 @@ body {
   top: 6rem;
 }
 
-.mt-12 {
-  margin-top: 3rem;
-}
-
 .block {
   display: block;
 }
@@ -732,16 +733,16 @@ body {
   justify-content: space-between;
 }
 
+.gap-10 {
+  gap: 2.5rem;
+}
+
 .gap-2 {
   gap: 0.5rem;
 }
 
 .gap-4 {
   gap: 1rem;
-}
-
-.self-start {
-  align-self: flex-start;
 }
 
 .rounded-full {
@@ -782,6 +783,12 @@ body {
 
 .group:hover .group-hover\:block {
   display: block;
+}
+
+@media (min-width: 1024px) {
+  .lg\:gap-20 {
+    gap: 5rem;
+  }
 }
 
 @media (min-width: 1280px) {

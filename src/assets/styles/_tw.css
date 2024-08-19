@@ -16,6 +16,10 @@
         --primary-text: 0 0% 100%;
         --secondary-text: 225 27% 63%;
     }
+    html {
+        scroll-behavior: smooth;
+        -webkit-text-size-adjust: 100%;
+    }
     body {
         @apply text-foreground bg-background font-foreground overflow-x-hidden;
     }

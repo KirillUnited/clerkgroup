@@ -1,0 +1,35 @@
+.feature {
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+        gap: getMinMax(20px, 20px);
+    }
+    &__item {
+        @apply grid lg:flex flex-col items-center gap-7;
+        grid-template-columns: getrem(60px) 1fr;
+        gap: getMinMax(28px, 28px);
+    }
+    &__content {
+        @apply lg:text-center space-y-2;
+    }
+    &__icon {
+        width: getMinMax(60px, 60px);
+        img {
+            width: 100%;
+        }
+    }
+    &__title {
+        @apply font-bold;
+    }
+    &__description {
+        @apply text-secondary-foreground;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .feature__section {
+        .heading {
+            @apply text-left;
+        }
+    }
+}
