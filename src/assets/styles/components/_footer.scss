@@ -1,0 +1,14 @@
+.footer {
+    --border-color: #eeeef6;
+    &__inner {
+        @apply flex items-center justify-between;
+        border-top: 1px solid var(--border-color);
+        padding: getMinMax(28px, 64px) 0 getMinMax(40px, 80px);
+    }
+    &__social {
+        @apply flex items-center justify-center gap-6;
+        &__item {
+            @apply text-secondary-foreground;
+        }
+    }
+}

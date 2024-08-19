@@ -1,29 +1,30 @@
 .button {
-    --color: #EF2A82;
+    --bg-color: #EF2A82;
     @apply inline-flex items-center justify-center;
-    @apply text-primary-foreground bg-primary;
+    @apply text-primary-foreground bg-primary truncate;
     @apply transition-colors;
     font-size: getrem(16px);
     min-height: calc(50/16*1em);
     padding-inline: calc(80/16*1em);
     border-radius: calc(68/16*1em);
-    border: 2px solid var(--color);
+    border: 2px solid var(--bg-color);
     &:hover {
-        --color: #D61069;
-        background-color: var(--color);
+        --bg-color: #D61069;
+        background-color: var(--bg-color);
     }
     &:focus {
-        --color: #A60C51;
+        --bg-color: #A60C51;
     }
     &-secondary {
-        --color: #465B95;
+        --bg-color: #465B95;
         @apply text-secondary-foreground;
         background-color: transparent;
         &:hover {
-            --color: #465B95
+            --bg-color: #465B95;
+            @apply text-white;
         }
         &:focus {
-            --color: #364672
+            --bg-color: #364672;
         }
     }
 }

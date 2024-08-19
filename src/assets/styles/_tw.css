@@ -8,15 +8,20 @@
         --primary-foreground: 0 0% 100%;
         --secondary: transparent;
         --secondary-foreground: 225 27% 63%;
-        --background: 225 57% 21%;
-        --foreground: 0 0% 100%;
+        --background: 231 100% 99%;
+        --background-secondary: 225 57% 21%;
+        --foreground: 225 57% 21%;
         --font-foreground: "Roboto";
         --card-background: #465B95;
         --primary-text: 0 0% 100%;
         --secondary-text: 225 27% 63%;
     }
+    html {
+        scroll-behavior: smooth;
+        -webkit-text-size-adjust: 100%;
+    }
     body {
-        @apply text-foreground bg-background font-foreground;
+        @apply text-foreground bg-background font-foreground overflow-x-hidden;
     }
 }
 @layer components {
@@ -28,9 +33,6 @@
 
     .content {
         flex: 1 0 auto;
-    }
-    .container-sm {
-        @apply lg:max-w-screen-md xl:max-w-screen-lg 2xl:max-w-[1320px];
     }
     .post-content-grid {
         @apply gap-x-7;
