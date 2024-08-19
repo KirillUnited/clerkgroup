@@ -684,13 +684,6 @@ body {
   flex: 1 0 auto;
 }
 
-.post-content-grid {
-  -moz-column-gap: 1.75rem;
-       column-gap: 1.75rem;
-  grid-template-columns: 1fr 420px;
-  grid-template-rows: repeat(2, auto);
-}
-
 .relative {
   position: relative;
 }
@@ -701,15 +694,6 @@ body {
 
 .top-24 {
   top: 6rem;
-}
-
-.row-span-2 {
-  grid-row: span 2 / span 2;
-}
-
-.my-7 {
-  margin-top: 1.75rem;
-  margin-bottom: 1.75rem;
 }
 
 .mt-12 {
@@ -800,19 +784,6 @@ body {
   display: block;
 }
 
-@media (min-width: 768px) {
-  .md\:my-12 {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .lg\:grid {
-    display: grid;
-  }
-}
-
 @media (min-width: 1280px) {
   .xl\:block {
     display: block;
@@ -824,11 +795,5 @@ body {
 
   .xl\:hidden {
     display: none;
-  }
-}
-
-@media (min-width: 1536px) {
-  .\32xl\:max-w-\[1320px\] {
-    max-width: 1320px;
   }
 }

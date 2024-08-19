@@ -1,5 +1,7 @@
 {% import "./button.njk" as Button %}
-<section class="hero" style="background-image: url('../assets/images/bg-bg.png')">
+<section
+    class="hero"
+>
     <div class="container">
         <div class="hero__inner">
             <div class="hero__content">
@@ -8,22 +10,29 @@
                         Monitor your business on real-time dashboard
                     </h1>
                     <p class="hero__description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est.
-                        Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Elementum nisi aliquet volutpat pellentesque volutpat
+                        est. Sapien in etiam vitae nibh nunc mattis imperdiet
+                        sed nullam.
                     </p>
                 </div>
-                {{ Button.Button("Try for free", className="self-start mt-12") }}
+                {{ Button.Button("Try for free", className="hero__button") }}
             </div>
             <div class="hero__image">
-                <img
-                    loading="lazy"
-                    decoding="async"
-                    width="873"
-                    height="554"
-                    src="../assets/images/bg-mobile.png"
-                    srcset="../assets/images/bg-mobile.png 240w,
-                    ../assets/images/bg.png 720w"
-                    alt="Monitor your business on real-time dashboard"/>
+                <picture>
+                    <source
+                        srcset="../assets/images/bg.png"
+                        media="(min-width: 1024px)"
+                    />
+                    <img
+                        loading="lazy"
+                        decoding="async"
+                        width="873"
+                        height="554"
+                        src="../assets/images/bg-mobile.png"
+                        alt="Monitor your business on real-time dashboard"
+                    />
+                </picture>
             </div>
         </div>
     </div>

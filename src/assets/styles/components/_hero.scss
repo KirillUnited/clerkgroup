@@ -1,15 +1,17 @@
 .hero {
+    position: relative;
+    background-image: url("../../assets/images/bg-bg.png");
     background-position: center top;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     &__inner {
-        @apply flex flex-wrap items-center justify-between gap-20;
-        padding: getMinMax(40px, 110px) 0;
+        @apply flex flex-col lg:flex-row flex-wrap justify-between;
+        gap: getMinMax(24px, 80px);
+        padding: getMinMax(40px, 110px) 0 getMinMax(124px, 124px);
     }
     &__content {
-        @apply flex flex-col items-center justify-between;
-        width: getrem(550px);
-        flex-basis: getrem(550px);
+        @apply flex flex-col items-center justify-between order-3 lg:order-1 lg:py-20 self-start;
+        width: min(getrem(550px), 100%);
     }
     &__title {
         @apply font-bold;
@@ -21,7 +23,27 @@
         font-size: getMinMax(16px, 18px);
         line-height: calc(24px / 19px) * 1em;
     }
+    &__button {
+        @apply self-stretch lg:self-start mt-6 lg:mt-12;
+    }
     &__image {
+        @apply order-2;
         flex: 1;
+        max-width: 100%;
+        max-height: 100%;
+        picture {
+            @apply lg:translate-x-[25%];
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+@media screen and (max-width: 1024px) {
+    .hero {
+        background-image: url("../../assets/images/background-top.png");
+        &__content {
+            width: 100%;
+        }
     }
 }
