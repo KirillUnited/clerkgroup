@@ -2,7 +2,7 @@
 {% import "./button.njk" as Button %}
 <header id="header" class="header">
     <div class="container">
-        <div class="flex items-center justify-between py-4">
+        <div class="header__inner">
             {% include "./html/logo.html" %}
             <div class="hidden xl:block">{{ headerMenu.headerMenu(['Products', 'Features', 'Registration', 'Pricing']) }}</div>
             <div class="hidden xl:flex items-center">

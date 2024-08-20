@@ -1,6 +1,9 @@
 .header {
     @apply sticky top-0 left-0 right-0 z-10;
     @apply bg-background-secondary font-foreground;
+    &__inner {
+        @apply flex items-center justify-between py-4;
+    }
     &-nav {
         &-list {
             @apply flex items-center flex-wrap;

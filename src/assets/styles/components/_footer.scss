@@ -1,5 +1,10 @@
 .footer {
     --border-color: #eeeef6;
+    position: relative;
+    background-image: url("../../assets/images/bg-bottom.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     &__inner {
         @apply flex items-center justify-between;
         border-top: 1px solid var(--border-color);
@@ -10,5 +15,11 @@
         &__item {
             @apply text-secondary-foreground;
         }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .footer {
+        background-image: url("../../assets/images/bg-bottom-mobile.png");
     }
 }
