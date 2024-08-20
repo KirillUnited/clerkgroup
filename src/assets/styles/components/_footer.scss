@@ -20,13 +20,7 @@
         }
     }
     .section__inner {
-        padding-top: getMinMax(128px, 338px);
+        padding-top: getMinMax(64px, 128px);
     }
 }
-@media screen and (min-width: 1025px) {
-    .footer {
-        .section__inner {
-            padding-top: getrem(128px);
-        }
-    }
-}
+
