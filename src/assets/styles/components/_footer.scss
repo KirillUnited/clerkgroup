@@ -1,5 +1,6 @@
 .footer {
-    --border-color: #eeeef6;
+    --border-color: rgba(238, 238, 246, 0.1);
+
     position: relative;
     background-image: url("../../assets/images/bg-bottom.png");
     background-position: center top;
@@ -15,6 +16,9 @@
         &__item {
             @apply text-secondary-foreground;
         }
+    }
+    .section__inner {
+        padding-top: getMinMax(128px, 338px);
     }
 }
 

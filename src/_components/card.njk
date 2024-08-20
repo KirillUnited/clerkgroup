@@ -18,9 +18,9 @@
             </p>
         </div>
         {% if variant==='primary' %}
-            {{ Button.Button('Order', 'button-secondary', 'card__button') }}
-        {% else %}
             {{ Button.Button('Order', 'button-primary', 'card__button') }}
+        {% else %}
+            {{ Button.Button('Order', 'button-secondary', 'card__button') }}
         {% endif %}
     </div>
 {% endmacro %}

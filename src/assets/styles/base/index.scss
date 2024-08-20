@@ -16,3 +16,8 @@
     @apply text-secondary-foreground;
     font-size: getMinMax(16px, 18px);
 }
+@media screen and (max-width: 1024px) {
+    .heading {
+        @apply text-left;
+    }
+}

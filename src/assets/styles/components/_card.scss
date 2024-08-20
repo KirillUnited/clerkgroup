@@ -2,6 +2,7 @@
     --border-color: #fff;
     @apply bg-white text-card-background text-center;
     width: min(getrem(338px), 100%);
+    height: 100%;
     padding: getMinMax(40px, 50px) getMinMax(20px, 50px) getMinMax(50px, 70px)
         getMinMax(20px, 50px);
     box-shadow: 0px 18px 50px -15px #192a5933;
@@ -12,7 +13,8 @@
         padding-bottom: getMinMax(30px, 40px);
     }
     &__body {
-        border-top: 1px solid #eeeef6;
+        --border-color: rgba(238, 238, 246, 0.1);
+        border-top: 1px solid var(--border-color);
         padding-top: getMinMax(30px, 40px);
         padding-bottom: getMinMax(30px, 40px);
     }
@@ -27,7 +29,7 @@
     &__button {
         width: 100%;
     }
-    &--primary {
+    &--secondary {
         --border-color: #465b95;
         @apply bg-card-background;
         @apply text-card-foreground;

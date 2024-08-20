@@ -1,12 +1,32 @@
 {% import "./header-menu.njk" as headerMenu %}
 {% import "./card.njk" as Card %}
 <footer id="footer" class="footer">
-    <div class="container">
-        <div class="footer__inner">
-            {{ Card.Card()}}
-            {{ Card.Card('primary', 'card--primary')}}
-            {{ Card.Card()}}
+    <section id="Pricing" class="section">
+        <div class="container">
+            <div class="section__inner">
+                <div class="heading">
+                    <h2 class="heading__title-2 text-white">Pricing Plans</h2>
+                    <p class="heading__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat
+                        pellentesque volutpat est.
+                    </p>
+                </div>
+                <div class="pricing">
+                    <ul class="pricing__list">
+                        <li class="pricing__item">
+                            {{ Card.Card('secondary', 'card--secondary') }}
+                        </li>
+                        <li class="pricing__item">
+                            {{ Card.Card('primary') }}
+                        </li>
+                        <li class="pricing__item">
+                            {{ Card.Card('secondary', 'card--secondary') }}
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
+    </section>
+    <div class="container bg-background-secondary">
         <div class="footer__inner">
             <a href="/" class="logo">
                 <img src="../../assets/images/logo-2.svg" class="logo-icon" alt="ANALYTICS"/>

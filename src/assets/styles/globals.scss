@@ -726,6 +726,10 @@ body {
   border-radius: 9999px;
 }
 
+.bg-background-secondary {
+  background-color: hsl(var(--background-secondary));
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;

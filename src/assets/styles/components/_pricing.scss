@@ -1,0 +1,9 @@
+.pricing {
+    padding-top: getMinMax(28px, 60px);
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(min(getrem(338px), 100%), 1fr));
+        justify-items: center;
+        gap: getMinMax(20px, 20px);
+    }
+}
