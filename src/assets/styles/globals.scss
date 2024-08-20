@@ -462,7 +462,8 @@ video {
   --background-secondary: 225 57% 21%;
   --foreground: 225 57% 21%;
   --font-foreground: "Roboto";
-  --card-background: #465B95;
+  --card-background: #172755;
+  --card-foreground: #fff;
   --primary-text: 0 0% 100%;
   --secondary-text: 225 27% 63%;
 }
@@ -713,10 +714,6 @@ body {
   align-items: center;
 }
 
-.justify-between {
-  justify-content: space-between;
-}
-
 .gap-10 {
   gap: 2.5rem;
 }
@@ -732,11 +729,6 @@ body {
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 
 .text-white {

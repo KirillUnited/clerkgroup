@@ -12,7 +12,8 @@
         --background-secondary: 225 57% 21%;
         --foreground: 225 57% 21%;
         --font-foreground: "Roboto";
-        --card-background: #465B95;
+        --card-background: #172755;
+        --card-foreground: #fff;
         --primary-text: 0 0% 100%;
         --secondary-text: 225 27% 63%;
     }

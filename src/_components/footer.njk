@@ -1,6 +1,12 @@
 {% import "./header-menu.njk" as headerMenu %}
+{% import "./card.njk" as Card %}
 <footer id="footer" class="footer">
     <div class="container">
+        <div class="footer__inner">
+            {{ Card.Card()}}
+            {{ Card.Card('primary', 'card--primary')}}
+            {{ Card.Card()}}
+        </div>
         <div class="footer__inner">
             <a href="/" class="logo">
                 <img src="../../assets/images/logo-2.svg" class="logo-icon" alt="ANALYTICS"/>

@@ -28,7 +28,12 @@ module.exports = {
           secondary: 'hsl(var(--background-secondary))',
         },
         foreground: 'hsl(var(--foreground))',
-        text: 'var(--text)'
+        text: 'var(--text)',
+        card: {
+          DEFAULT: '#fff',
+          foreground: 'var(--card-foreground)',
+          background: 'var(--card-background)'
+        }
       }
     },
   },
