@@ -1,6 +1,6 @@
 {% import "./button.njk" as Button %}
 
-<form action="/_site/" class="form">
+<form id="user_reg_form" action="/_site/" class="form">
     <div class="form__inner">
         <div class="form__fields">
             <div class="form__group">
@@ -13,6 +13,20 @@
                     placeholder="Full Name *"
                     required
                 />
+            </div>
+            <div class="form__group">
+                <label for="dep" class="form__label">Departement *</label>
+                <select
+                    name="dep"
+                    id="dep"
+                    class="form__input js-choice"
+                    placeholder="Please Select"
+                    required
+                >
+                <option placeholder disabled selected>Please Select</option>
+                <option value="2">Best Performance</option>
+                <option value="3">Widget System</option>
+                </select>
             </div>
             <div class="form__group">
                 <label for="email" class="form__label">Email address *</label>

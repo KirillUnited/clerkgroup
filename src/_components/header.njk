@@ -4,11 +4,11 @@
     <div class="container">
         <div class="header__inner">
             {% include "./html/logo.html" %}
-            <div class="hidden xl:block">{{ headerMenu.headerMenu(['Products', 'Features', 'Registration', 'Pricing']) }}</div>
-            <div class="hidden xl:flex items-center">
+            <div class="hidden lg:block">{{ headerMenu.headerMenu(['Products', 'Features', 'Registration', 'Pricing']) }}</div>
+            <div class="hidden lg:flex items-center">
                 {{ Button.Button('Sign UP', 'button-secondary') }}
             </div>
-            <button type="button" class="header-menu-button grid xl:hidden">
+            <button data-mobile-menu="open" type="button" class="header-menu-button grid lg:hidden">
                     <svg
                         class="header-menu-icon"
                         width="100%"

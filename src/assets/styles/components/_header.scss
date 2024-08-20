@@ -33,3 +33,29 @@
         height: var(--size);
     }
 }
+.header-menu-mobile {
+    @apply fixed top-0 left-0 right-0 bottom-0;
+    @apply bg-background-secondary;
+    @apply z-20;
+    @apply transition duration-300;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    transform: translateX(-100%);
+    pointer-events: none;
+    &__inner {
+        @apply flex flex-col justify-between;
+        height: 100%;
+        padding-top: getrem(40px);
+        padding-bottom: getrem(50px);
+    }
+    .header-nav-list {
+        @apply font-bold;
+        font-size: getrem(28px);
+        flex-direction: column;
+        align-items: start;
+    }
+    &--open {
+        transform: translateX(0);
+        pointer-events: auto;
+    }
+}
