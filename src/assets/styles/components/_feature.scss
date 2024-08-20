@@ -25,11 +25,3 @@
         @apply text-secondary-foreground;
     }
 }
-
-@media screen and (max-width: 1024px) {
-    .feature__section {
-        .heading {
-            @apply text-left;
-        }
-    }
-}

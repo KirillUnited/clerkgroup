@@ -1,0 +1,18 @@
+.pricing {
+    padding-top: getMinMax(28px, 60px);
+}
+@media screen and (min-width: 1025px) {
+    .pricing {
+        &__list {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: getMinMax(20px, 20px);
+        }
+    }
+}
+@media screen and (max-width: 1024px) {
+    .pricing {
+        overflow: visible;
+    }
+}

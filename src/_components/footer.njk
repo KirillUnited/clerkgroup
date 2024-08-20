@@ -1,5 +1,31 @@
 {% import "./header-menu.njk" as headerMenu %}
+{% import "./card.njk" as Card %}
 <footer id="footer" class="footer">
+    <section id="Pricing" class="section">
+        <div class="container">
+            <div class="section__inner">
+                <div class="heading">
+                    <h2 class="heading__title-2 text-white">Pricing Plans</h2>
+                    <p class="heading__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat
+                        pellentesque volutpat est.
+                    </p>
+                </div>
+                <div class="pricing swiper" watch-slides-progress="true" slides-per-view="auto">
+                    <ul class="swiper-wrapper pricing__list"  slides-per-view="auto">
+                        <li class="swiper-slide w-fit">
+                            {{ Card.Card('secondary', 'card--secondary mx-auto') }}
+                        </li>
+                        <li class="swiper-slide w-fit">
+                            {{ Card.Card('primary', 'mx-auto') }}
+                        </li>
+                        <li class="swiper-slide w-fit">
+                            {{ Card.Card('secondary', 'card--secondary mx-auto') }}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
     <div class="container">
         <div class="footer__inner">
             <a href="/" class="logo">

@@ -1,0 +1,26 @@
+{% import "./button.njk" as Button %}
+{% macro Card(variant, className) %}
+    <div class="card {{className}}">
+        <div class="card__header">
+            <h3 class="card__title">
+                Standard
+            </h3>
+            <p class="card__description">
+                up to 20 users
+            </p>
+        </div>
+        <div class="card__body">
+            <h3 class="card__title">
+                $99
+            </h3>
+            <p class="card__description">
+                per month
+            </p>
+        </div>
+        {% if variant==='primary' %}
+            {{ Button.Button('Order', 'button-primary', 'card__button') }}
+        {% else %}
+            {{ Button.Button('Order', 'button-secondary', 'card__button') }}
+        {% endif %}
+    </div>
+{% endmacro %}
