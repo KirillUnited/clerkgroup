@@ -668,9 +668,9 @@ body {
   }
 }
 
-@media (min-width: 1120px) {
+@media (min-width: 1220px) {
   .container {
-    max-width: 1120px;
+    max-width: 1220px;
   }
 }
 
@@ -741,6 +741,10 @@ body {
 }
 
 @media (min-width: 1024px) {
+  .lg\:grid {
+    display: grid;
+  }
+
   .lg\:gap-20 {
     gap: 5rem;
   }
