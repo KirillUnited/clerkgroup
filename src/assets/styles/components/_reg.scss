@@ -1,3 +1,9 @@
+.reg-section {
+    // background-image: url("../../assets/images/bg-bottom.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
 .reg {
     @apply bg-white lg:grid lg:grid-cols-2;
     border-radius: getrem(28px);
@@ -17,5 +23,11 @@
         .heading {
             text-align: center;
         }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .reg-section {
+        // background-image: url("../../assets/images/bg-bottom-mobile.png");
     }
 }
