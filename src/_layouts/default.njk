@@ -19,6 +19,7 @@
         <div class="wrapper">
             {% block header %}
                 {% include "../_components/header.njk" %}
+                {% include "../_components/header-menu-mobile.njk" %}
             {% endblock %}
             <main class="content">
                 {{ content | safe }}
