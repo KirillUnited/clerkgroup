@@ -1,3 +1,32 @@
 .form {
-    
+    --label-color: #252b42;
+    $input-font-size: 16px;
+    &__inner {
+        @apply flex flex-col gap-10;
+    }
+    &__fields {
+        @apply flex flex-col gap-6;
+    }
+    &__group {
+        @apply flex flex-col gap-3;
+    }
+    &__label {
+        @apply font-bold self-start;
+        color: var(--label-color);
+        font-size: getrem(16px);
+    }
+    &__input {
+        @apply transition-all;
+        border-radius: 0.5em;
+        padding: calc(calc(14px / $input-font-size) * 1em)
+            calc(calc(20px / $input-font-size) * 1em);
+        font-size: getrem($input-font-size);
+        border: 2px solid transparent;
+        background-color: rgb(238, 238, 246);
+        &:focus {
+            outline: 0;
+            outline-offset: 0;
+            @apply border-background-secondary border-2;
+        }
+    }
 }

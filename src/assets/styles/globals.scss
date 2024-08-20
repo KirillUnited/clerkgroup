@@ -710,6 +710,10 @@ body {
   width: fit-content;
 }
 
+.w-full {
+  width: 100%;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -724,6 +728,10 @@ body {
 
 .gap-4 {
   gap: 1rem;
+}
+
+.self-center {
+  align-self: center;
 }
 
 .rounded-full {
@@ -747,6 +755,10 @@ body {
 
   .lg\:gap-20 {
     gap: 5rem;
+  }
+
+  .lg\:self-center {
+    align-self: center;
   }
 }
 
