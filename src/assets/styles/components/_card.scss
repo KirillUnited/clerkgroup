@@ -13,7 +13,7 @@
         padding-bottom: getMinMax(30px, 40px);
     }
     &__body {
-        --border-color: rgba(238, 238, 246, 0.1);
+        --border-color: #eeeef6;
         border-top: 1px solid var(--border-color);
         padding-top: getMinMax(30px, 40px);
         padding-bottom: getMinMax(30px, 40px);
@@ -33,5 +33,8 @@
         --border-color: #465b95;
         @apply bg-card-background;
         @apply text-card-foreground;
+        .card__body {
+            --border-color: rgba(238, 238, 246, 0.1);
+        }
     }
 }

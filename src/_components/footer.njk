@@ -10,23 +10,23 @@
                         pellentesque volutpat est.
                     </p>
                 </div>
-                <div class="pricing">
-                    <ul class="pricing__list">
-                        <li class="pricing__item">
-                            {{ Card.Card('secondary', 'card--secondary') }}
+                <div class="pricing swiper" watch-slides-progress="true" slides-per-view="auto">
+                    <ul class="swiper-wrapper"  slides-per-view="auto">
+                        <li class="swiper-slide w-fit">
+                            {{ Card.Card('secondary', 'card--secondary mx-auto') }}
                         </li>
-                        <li class="pricing__item">
-                            {{ Card.Card('primary') }}
+                        <li class="swiper-slide w-fit">
+                            {{ Card.Card('primary', 'mx-auto') }}
                         </li>
-                        <li class="pricing__item">
-                            {{ Card.Card('secondary', 'card--secondary') }}
+                        <li class="swiper-slide w-fit">
+                            {{ Card.Card('secondary', 'card--secondary mx-auto') }}
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
-    <div class="container bg-background-secondary">
+    <div class="container">
         <div class="footer__inner">
             <a href="/" class="logo">
                 <img src="../../assets/images/logo-2.svg" class="logo-icon" alt="ANALYTICS"/>

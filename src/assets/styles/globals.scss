@@ -690,6 +690,11 @@ body {
   flex: 1 0 auto;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .block {
   display: block;
 }
@@ -706,6 +711,11 @@ body {
   display: none;
 }
 
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -714,12 +724,20 @@ body {
   align-items: center;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .gap-10 {
   gap: 2.5rem;
 }
 
 .gap-4 {
   gap: 1rem;
+}
+
+.overflow-x-visible {
+  overflow-x: visible;
 }
 
 .rounded-full {
