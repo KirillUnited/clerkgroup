@@ -10,19 +10,7 @@
                         pellentesque volutpat est.
                     </p>
                 </div>
-                <div class="pricing swiper" watch-slides-progress="true" slides-per-view="auto">
-                    <ul class="swiper-wrapper pricing__list"  slides-per-view="auto">
-                        <li class="swiper-slide w-fit">
-                            {{ Card.Card('secondary', 'card--secondary mx-auto') }}
-                        </li>
-                        <li class="swiper-slide w-fit">
-                            {{ Card.Card('primary', 'mx-auto') }}
-                        </li>
-                        <li class="swiper-slide w-fit">
-                            {{ Card.Card('secondary', 'card--secondary mx-auto') }}
-                        </li>
-                    </ul>
-                </div>
+                {% include "./html/pricing.html" %}
             </div>
         </div>
     </section>

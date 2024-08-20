@@ -650,33 +650,27 @@ body {
   padding-left: 20px;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 600px) {
   .container {
-    max-width: 640px;
+    max-width: 600px;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 728px) {
   .container {
-    max-width: 768px;
+    max-width: 728px;
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 984px) {
   .container {
-    max-width: 1024px;
+    max-width: 984px;
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1220px) {
   .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
+    max-width: 1220px;
   }
 }
 
@@ -716,16 +710,16 @@ body {
   width: fit-content;
 }
 
+.w-full {
+  width: 100%;
+}
+
 .flex-col {
   flex-direction: column;
 }
 
 .items-center {
   align-items: center;
-}
-
-.justify-center {
-  justify-content: center;
 }
 
 .gap-10 {
@@ -736,16 +730,12 @@ body {
   gap: 1rem;
 }
 
-.overflow-x-visible {
-  overflow-x: visible;
+.self-center {
+  align-self: center;
 }
 
 .rounded-full {
   border-radius: 9999px;
-}
-
-.bg-background-secondary {
-  background-color: hsl(var(--background-secondary));
 }
 
 .object-cover {
@@ -759,8 +749,16 @@ body {
 }
 
 @media (min-width: 1024px) {
+  .lg\:grid {
+    display: grid;
+  }
+
   .lg\:gap-20 {
     gap: 5rem;
+  }
+
+  .lg\:self-center {
+    align-self: center;
   }
 }
 

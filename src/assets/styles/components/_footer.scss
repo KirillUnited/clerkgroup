@@ -5,7 +5,9 @@
     background-image: url("../../assets/images/bg-bottom.png");
     background-position: center top;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
+    overflow: hidden;
+    padding-top: getMinMax(64px, 128px);
     &__inner {
         @apply flex items-center justify-between;
         border-top: 1px solid var(--border-color);
@@ -18,12 +20,7 @@
         }
     }
     .section__inner {
-        padding-top: getMinMax(128px, 338px);
+        padding-top: getMinMax(64px, 128px);
     }
 }
 
-@media screen and (max-width: 1024px) {
-    .footer {
-        background-image: url("../../assets/images/bg-bottom-mobile.png");
-    }
-}
