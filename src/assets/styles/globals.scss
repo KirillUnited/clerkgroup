@@ -650,33 +650,27 @@ body {
   padding-left: 20px;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 600px) {
   .container {
-    max-width: 640px;
+    max-width: 600px;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 728px) {
   .container {
-    max-width: 768px;
+    max-width: 728px;
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 984px) {
   .container {
-    max-width: 1024px;
+    max-width: 984px;
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1120px) {
   .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
+    max-width: 1120px;
   }
 }
 
@@ -724,10 +718,6 @@ body {
   align-items: center;
 }
 
-.justify-center {
-  justify-content: center;
-}
-
 .gap-10 {
   gap: 2.5rem;
 }
@@ -736,16 +726,8 @@ body {
   gap: 1rem;
 }
 
-.overflow-x-visible {
-  overflow-x: visible;
-}
-
 .rounded-full {
   border-radius: 9999px;
-}
-
-.bg-background-secondary {
-  background-color: hsl(var(--background-secondary));
 }
 
 .object-cover {
