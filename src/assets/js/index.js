@@ -1,5 +1,5 @@
 import "../styles/app.scss";
-import "./pricing-slider"
+// import "./pricing-slider"
 import { handleMediaQueryChange, mediaQuery } from "./pricing-slider";
 import "./custom-select";
 
