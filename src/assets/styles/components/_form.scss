@@ -50,4 +50,16 @@
                 calc(calc(20px / $input-font-size) * 1em);
         }
     }
+    .choices[data-type*=select-one]::after {
+        --border-width: 2px;
+        @apply border-secondary-text right-5;
+        border-width: 0 var(--border-width) var(--border-width) 0;
+        display: inline-block;
+        padding: 4px;
+        transform: rotate(45deg) translateY(-50%);
+    }
+    .choices[data-type*=select-one].is-open::after {
+        border-width: var(--border-width) 0 0 var(--border-width);
+        margin-top: 1px;
+    }
 }

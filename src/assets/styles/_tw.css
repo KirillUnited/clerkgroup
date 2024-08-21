@@ -35,9 +35,4 @@
     .content {
         flex: 1 0 auto;
     }
-    .post-content-grid {
-        @apply gap-x-7;
-        grid-template-columns: 1fr 420px;
-        grid-template-rows: repeat(2, auto);
-    }
 }
