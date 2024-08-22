@@ -1,3 +1,4 @@
+// base variables
 $grid-breakpoints: ("xs": 576px,
     "sm": 767px,
     "md": 991px,
@@ -5,3 +6,5 @@ $grid-breakpoints: ("xs": 576px,
     "xl": 1376px);
 $base: 16px;
 $base-viewport-mobile: 576px;
+// form variables
+$input-font-size: 16px;

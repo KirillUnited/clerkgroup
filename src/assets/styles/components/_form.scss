@@ -1,6 +1,5 @@
 .form {
     --label-color: #252b42;
-    $input-font-size: 16px;
     &__inner {
         @apply flex flex-col gap-10;
     }
@@ -15,8 +14,7 @@
         color: var(--label-color);
         font-size: getrem(16px);
     }
-    &__input,
-    .choices[data-type*="select-one"] .choices__inner {
+    &__input {
         @apply transition-all;
         border-radius: 0.5em;
         padding: calc(calc(14px / $input-font-size) * 1em)
@@ -29,37 +27,5 @@
             outline-offset: 0;
             @apply border-background-secondary border-2;
         }
-    }
-    .choices.is-open .choices__inner {
-        @apply border-background-secondary border-2;
-    }
-    .choices__list--single {
-        padding: 0;
-    }
-    .choices__list--dropdown,
-    .choices__list[aria-expanded] {
-        margin-top: 4px;
-        border-radius: 0.5em;
-        border: 2px solid #eeeef6;
-        box-shadow: 0px 18px 50px -15px #192a5933;
-        padding-top: 0.5em;
-        padding-bottom: 0.5em;
-        .choices__item {
-            font-size: getrem($input-font-size);
-            padding: calc(calc(14px / $input-font-size) * 1em)
-                calc(calc(20px / $input-font-size) * 1em);
-        }
-    }
-    .choices[data-type*=select-one]::after {
-        --border-width: 2px;
-        @apply border-secondary-text right-5;
-        border-width: 0 var(--border-width) var(--border-width) 0;
-        display: inline-block;
-        padding: 4px;
-        transform: rotate(45deg) translateY(-50%);
-    }
-    .choices[data-type*=select-one].is-open::after {
-        border-width: var(--border-width) 0 0 var(--border-width);
-        margin-top: 1px;
     }
 }
