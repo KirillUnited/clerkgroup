@@ -1,8 +1,8 @@
-.social-list {
-    @apply flex items-center;
-    @apply gap-x-3;
-    @apply text-background;
-    & > li > a {
-        display: flex;
+.social {
+    &__list {
+        @apply flex items-center justify-center gap-6;
+    }
+    &__item {
+        @apply text-secondary-foreground;
     }
 }
